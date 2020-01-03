@@ -136,7 +136,7 @@ function draw() {
     if (blocks[i].overlap(player)) {
       blocks[i].chase = true;
       if (blocks[i].life > 20) {
-        blocks[i].life = 20;
+        blocks[i].life = 20;  
       }
     }
   }
@@ -158,7 +158,7 @@ function draw() {
 
   // heart add
   if (player.overlap(blocks)) {
-    let heart_count = round(random(0, 0.52));
+    let heart_count = round(random(0,.52));
     for (let i = 0; i < heart_count; i++) {
       heart_shape = createSprite(
         player.position.x + round(random(-32, 32)),
