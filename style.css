@@ -1,0 +1,47 @@
+canvas {
+  /*   -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;*/
+  image-rendering: pixelated;
+}
+
+#gameframe {
+  display: block;
+  margin: auto;
+  min-height: 208px;
+  /* overflow: hidden; */
+}
+
+/* for demo */
+.waiting_wrap {
+  padding-top: 40%;
+  background: #ffffff;
+}
+
+.count_info_sec {
+  padding-bottom: 40px;
+}
+
+.noti_sec {
+  margin-top: 40px;
+}
+
+html {
+  background: #ffffff;
+}
+
+.wait_num {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.txt_line2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.vip_info_noti {
+  font-size: 14px;
+}

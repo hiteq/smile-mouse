@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>p5.js example</title>
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width,"
+      minimum-scale="1.0,"
+      maximum-scale="1.0"
+    />
+    <meta http-equiv="Cache-Control" content="max-age=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://script.auction.co.kr/mobile/style/css/common_frame.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://script.auction.co.kr/mobile/style/css/m_waiting.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=VT323"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="l-wrapper" id="wrap">
+      <main role="main" id="main" class="l-main_body">
+        <div id="pm_wrap">
+          <div class="waiting_wrap" vip_case”="vip_case">
+            <div class="count_info_sec" id="waitingCountDiv">
+              <h3 class="vip_info"></h3>
+              <p class="txt_line2">
+                상품 구매를 위해<br /><span class="wait_num" id="waitingCount"
+                  >928</span
+                >명이 대기중 입니다.
+              </p>
+              <p class="vip_info_noti">새해 복 많이 받으세요!</p>
+            </div>
+
+            <!-- 게임 그려지는 부분 -->
+            <div id="gameframe"></div>
+            <!-- 게임 그려지는 부분 -->
+
+            <div class="noti_sec">
+              <strong>참고해 주세요</strong>
+              <ul>
+                <li>페이지 리로드시 대기인원이 늘어날 수 있습니다.</li>
+                <li>대기 중 품절이 발생할 수 있습니다.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="bottom_wrap" id="bottomWrap" style="">
+        <div class="bottom_inner">
+          <ul class="nav">
+            <li class="btn_home">
+              <a href="https://m.auction.co.kr" class="sp_hd">옥션</a>
+            </li>
+            <li class="btn_prev">
+              <a href="javascript:history.back();" class="sp_hd">뒤로가기</a>
+            </li>
+            <li class="btn_next">
+              <a href="javascript:history.forward();" class="sp_hd"
+                >앞으로가기</a
+              >
+            </li>
+            <li class="btn_menu">
+              <a href="#" class="sp_hd">메뉴</a>
+            </li>
+            <li class="btn_my">
+              <a href="#" class="sp_hd">마이페이지</a>
+            </li>
+          </ul>
+        </div>
+        <div class="btn_fix" id="toTheTop">
+          <button
+            type="button"
+            id="btn_top"
+            class="sp_hd"
+            href="javascript:$(window).scrollTop(0);“"
+          >
+            <span>맨위로 이동</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/p5.play.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
