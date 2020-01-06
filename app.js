@@ -188,8 +188,10 @@ function mousePressed() {
   let player_state = player.getAnimationLabel();
   player.position.x = 72;
   if (player_state == "walk") {
-    player.animation.rewind();
     player.changeAnimation("jump");
+    player.animation.rewind();
+    player.animation.looping = false;
+    
     player.velocity.y = -JUMP;
   }
 }
